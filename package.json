@@ -4,7 +4,7 @@
     "browser-sync": "2.26.3"
   },
   "scripts": {
-    "build": "NODE_ENV=production rm -rf dist/* && webpack -p",
+    "build": "NODE_ENV=production wasm-pack build && rm -rf dist/* && webpack -p",
     "watch": "webpack -w",
     "start:dev": "webpack-dev-server"
   },
