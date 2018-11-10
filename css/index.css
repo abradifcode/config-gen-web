@@ -12,10 +12,31 @@ body { min-height: 100%; }
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - 4rem);
 }
 
 .editor {
-    height: 50vh;
+    height: calc(50vh - 3rem);
     width: 100%;
+    position: relative;
+    padding-top: 3rem;
+}
+
+.banner {
+    height: 2rem;
+    font-family: sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    background: linear-gradient(to right, #f2f2f2, white);
+    /*border-left: 2px solid black;*/
+}
+.banner-text {
+    font-size: .8rem;
 }
